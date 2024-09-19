@@ -1,0 +1,513 @@
+/* Global Styles */
+* {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.red-dot,
+.red-text {
+    color: tomato;
+}
+
+.red-text {
+    margin-bottom: 0.5rem;
+}
+
+.shop-link {
+    background-color: tomato;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 6px;
+}
+
+
+/*Intro Section*/
+#intro-section {
+    text-align: center;
+}
+
+#intro-section img {
+    width: 80%;
+}
+
+.p-big-1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0 0 1.5rem 0;
+}
+
+
+/*Features Section*/
+#features-section {
+    text-align: center;
+}
+
+.features-card-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+    gap: 1rem;
+}
+
+.features-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 1rem;
+    padding: 0 0.9rem;
+}
+
+.features-card div {
+    margin-top: 3rem;
+}
+
+/* .features-card {} */
+
+.features-card h2 {
+    position: relative;
+    transform-origin: center center;
+    left: 21%;
+    /* top: 50%; */
+    transform: rotate(0.75turn);
+    color: #bcd5eb;
+    font-size: 6rem;
+    margin: 0;
+}
+
+.features-card p {
+    color: #bcd5eb;
+}
+
+
+/*Music Section*/
+#music-section {
+    background-color: #bcd5eb;
+    padding: 1rem 0 2rem 0;
+}
+
+.music-div-1 {
+    text-align: center;
+    background-color: white;
+    margin: 0 0.5rem;
+}
+
+.music-div-1 img {
+    width: 70%;
+    position: absolute;
+    right: 4rem;
+    top: 134rem;
+    z-index: 3;
+}
+
+.music-heading {
+    transform: rotate(270deg);
+    position: absolute;
+    right: 7rem;
+    top: 126rem;
+    font-size: 9rem;
+    background-color: #bcd5eb;
+    padding-bottom: 1rem;
+    /* margin: 0; */
+    /* margin-block: 0; */
+    /* margin-inline: 0; */
+    z-index: 1;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    /* width: 27rem; */
+    color: #deeaf5;
+    font-weight: 600;
+}
+
+.music-heading-2 {
+    position: relative;
+    /* top: 85rem; */
+    font-size: 13rem;
+    margin-bottom: 0;
+    background-color: white;
+    z-index: 0;
+    left: 7rem;
+    margin-right: 0;
+    margin-left: 0;
+    /* padding: 81px; */
+    /* margin-block: 0; */
+    /* margin-inline: 0; */
+    width: 3rem;
+    margin-top: 2rem;
+    padding-bottom: 9rem;
+    color: #bcd5eb;
+    font-weight: 700;
+}
+
+.music-div-2 {
+    background-color: white;
+    padding: 0.3rem 1rem 1.5rem 1rem;
+    margin: 0 0.5rem;
+}
+
+
+/*Testimonial Section*/
+#testimonials-section {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.testimonials-p2 {
+    color: lightblue;
+}
+
+.testimonials h4 {
+    margin-bottom: 0;
+}
+
+.testimonials-p1 {
+    margin-top: 0.3rem;
+}
+
+.quotes {
+    display: flex;
+    align-items: center;
+
+}
+
+hr {
+    border: 2px solid;
+    width: 100%;
+}
+
+.quote {
+    color: orangered;
+    font-size: 2rem;
+    border: 2px solid black;
+    /* border-width: thin; */
+    /* border-inline: 2px; */
+    /* border-width: 2px; */
+    width: 3rem;
+    /* margin-right: 60rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.quote~.quote {
+    display: none;
+}
+
+.testimonial-divs {
+    display: flex;
+}
+
+.testimonials~.testimonials {
+    display: none;
+}
+
+.testimonials {
+    margin-right: 2rem;
+}
+
+/*Discount Section*/
+#discount-section {
+    background-color: #bcd5eb;
+    color: white;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.discount-div-2 {
+    margin-top: 2.5rem;
+}
+
+.discount-div-2 p {
+    position: relative;
+    background-color: #bcd5eb;
+    font-weight: 600;
+    font-size: 1.4rem;
+    bottom: 14rem;
+    padding: 0.5rem 7rem;
+    margin-bottom: 0;
+}
+
+.ddi-2 {
+    display: none;
+}
+
+
+/*Footer*/
+.footer-mobile-heading {
+    text-align: center;
+}
+
+.footer-mobile {
+    display: flex;
+}
+
+footer p {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.footer-tablet {
+    display: none;
+}
+
+ul {
+    text-align: center;
+    list-style: none;
+}
+
+li a {
+    color: black;
+}
+
+.footer-mobile li:first-child {
+    margin-bottom: 1rem;
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+
+    #intro-section {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        text-align: left;
+        padding: 0 1rem;
+    }
+
+    /* tablet */
+    #intro-section img {
+        width: 45%;
+    }
+
+    .feature-cards {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .features-card-container {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .features-card {
+        width: 45%;
+        margin-bottom: 2rem;
+    }
+
+    .relative {
+        position: relative;
+        top: 3rem;
+    }
+
+    #music-section {
+        display: flex;
+    }
+
+    .music-div-1 {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .music-div-1 img {
+        width: 42%;
+        position: absolute;
+        right: 25rem;
+        top: 83rem;
+        z-index: 3;
+    }
+
+    .music-heading {
+        transform: rotate(270deg);
+        position: absolute;
+        right: 27rem;
+        top: 81rem;
+        font-size: 9rem;
+        background-color: #bcd5eb;
+        padding-bottom: 1rem;
+        /* margin: 0; */
+        /* margin-block: 0; */
+        /* margin-inline: 0; */
+        z-index: 1;
+        padding-right: 3rem;
+        padding-left: 4rem;
+        /* width: 27rem; */
+        color: #deeaf5;
+        font-weight: 600;
+    }
+
+    .music-div-2 {
+        padding: 3rem 3rem 3rem 11rem;
+        width: 42%;
+        margin-left: 24%;
+    }
+
+    .music-heading-2 {
+        position: relative;
+        bottom: 6rem;
+        font-size: 15rem;
+        margin-bottom: 0;
+        /* background-color: white; */
+        z-index: 2;
+        left: 4rem;
+        margin-right: 0;
+        margin-left: 0;
+        /* padding: 81px; */
+        /* margin-block: 0; */
+        /* margin-inline: 0; */
+        width: 0;
+        margin-top: 2rem;
+        padding-bottom: 9rem;
+        color: #bcd5eb;
+    }
+
+    .quote~.quote {
+        display: flex;
+    }
+
+    .testimonials~.testimonials {
+        display: block;
+    }
+
+    #discount-section {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+
+    .discount-div-1 {
+        text-align: left;
+    }
+
+    .discount-div-1 h2 {
+        font-size: 2.1rem;
+    }
+
+    .discount-div-2 p {
+        padding: 0.5rem;
+        font-size: 2rem;
+        bottom: 18rem;
+    }
+
+    .ddi-2 {
+        width: 19%;
+        display: block;
+        top: 150rem;
+        right: 0;
+        position: absolute;
+    }
+
+
+
+    /* Footer */
+    .footer-mobile-heading {
+        display: none;
+    }
+
+    .footer-tablet {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+    }
+
+    .footer-mobile {
+        display: none;
+    }
+
+    li {
+        list-style: none;
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+    #music-section {
+        margin-top: 6rem;
+    }
+
+
+    .music-heading {
+        right: 41rem;
+        top: 88rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-bottom: 3rem;
+    }
+
+    .music-heading-2 {
+        left: 9rem;
+
+    }
+
+    .music-div-1 img {
+        width: 33%;
+        position: absolute;
+        right: 36rem;
+        top: 88rem;
+        z-index: 3;
+    }
+
+    .music-div-2 {
+        padding: 3rem 3rem 3rem 21rem;
+        width: 38%;
+        margin-left: 21%;
+    }
+
+    #discount-section {
+        display: flex;
+        gap: 6rem;
+        padding: 0 6rem 0 3rem;
+        align-items: center;
+    }
+
+    .discount-div-2 p {
+        margin: 0;
+    }
+
+    .ddi-2 {
+        width: 15%;
+        top: 156rem;
+        right: 0;
+    }
+}
+
+
+
+@media screen and (min-width: 1440px) {
+    .music-div-2 {
+        padding: 3rem 3rem 3rem 45rem;
+        width: 27%;
+        margin-left: 15%;
+    }
+
+    .music-heading {
+        right: 67rem;
+        top: 98rem;
+    }
+
+    .music-div-1 img {
+        width: 24%;
+        right: 60rem;
+        top: 99rem;
+    }
+
+    .features-card div {
+        margin-top: 6rem;
+    }
+
+    .ddi-2 {
+        top: 163rem;
+    }
+}
